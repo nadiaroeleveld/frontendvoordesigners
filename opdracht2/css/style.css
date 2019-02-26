@@ -1,0 +1,314 @@
+html{
+    font-family:Montserrat;
+    margin: 0;
+    padding: 0;
+}
+
+html body{
+    margin: 0;
+    padding: 0;
+}
+/* BEWERKEN NAVIGATIE */
+header nav ul {
+    background-color:white;
+    list-style:none;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    color:black;
+}
+
+nav ul li:nth-of-type(1){
+    margin-left:-2em;
+    font-weight:650;
+}
+
+nav ul li:nth-of-type(2){
+    margin-left:auto;
+    padding: 0 2em;
+}
+
+nav ul li:nth-of-type(3){
+   padding: 0 2em;
+}
+
+nav ul li:nth-of-type(4){
+    padding:0 2em;
+}
+
+header a{
+    text-decoration:none;
+    color:black;
+    transition:all .15s;
+}
+header a:hover{
+    font-weight: 650;
+}
+
+header a:active{
+    font-weight: 650;
+}
+
+
+/* INTRODUCTION HOMEPAGE */
+
+html body section a i{
+    font-size: 2em;
+    color: lightgrey;
+}
+
+html body section.iconAngleDown{
+    text-align: center;
+    padding-top: 3em;
+    margin-bottom: 4em;
+}
+
+html body section.iconAngleDown a i:hover{
+    color: grey;
+    font-size: 2.2em;
+}
+
+/* ACHTERGROND */
+
+div.background{
+    text-align:center;
+
+}
+
+html body h1.titel1{
+    text-align:center;
+    font-size: 1.6em;
+    padding-bottom: 2em;
+    margin:0;
+    font-weight:normal;
+    font-size: 2em;
+}
+
+html body h2{
+    font-weight: lighter;
+}
+
+section:nth-of-type(1){
+    margin: 4em;
+    margin-bottom: 0;
+}
+
+section:nth-of-type(1) p:nth-of-type(2){
+    margin:0;
+    font-size: 0.7em;
+}
+
+h1{
+   font-size: 1.6em;
+    font-weight:100;
+    margin: 0 0 0.5em;
+}
+
+.kernwoorden{
+    font-size: 2.4em;
+    margin-bottom: 0.5em;
+    max-width: 8em;
+}
+
+h1.titel2{
+    text-align:center;
+    margin-top: 3em;
+    border-bottom: solid thin rgb(230, 230, 230);
+    padding-bottom: 0.5em;
+}
+
+img:nth-of-type(1){
+    max-width: 20em;
+    margin:0 1.2em -4em -1em;
+}
+
+/* MIJN PROJECTEN */
+html body #projecten div a img{
+    border-radius:50em;
+    margin:0.5em;
+
+}
+    html body #projecten div.beentjes{
+        margin-left: -14em;
+        display:block;
+    }
+    html body #projecten div.beentjes a img{
+        width: 12em;
+        transition: all .5s;
+    }
+    html body #projecten div.beentjes a img:hover{
+        transform:scale(1.3);
+    }
+
+    html body #projecten div.studyspots{
+        margin-top: -2em;
+        margin-left: 15em;
+    }
+
+     html body #projecten div.studyspots a img{
+        width: 12em;
+        transition:all .5s;
+    }
+    html body #projecten div.studyspots a img:hover{
+        transform:scale(1.3);
+    }
+
+    html body #projecten div.postcards{
+        margin-left: -19em;
+        margin-top: -2em;
+    }
+     html body #projecten div.postcards a img{
+        width: 12em;
+        transition:all .5s;
+    }
+    html body #projecten div.postcards a img:hover{
+        transform:scale(1.3);
+    }
+
+    html body #projecten div.oba{
+        margin-left: 13em;
+        margin-top:-2em;
+    }
+     html body #projecten div.oba a img{
+        width: 12em;
+        transition:all .5s;
+
+    }
+    html body #projecten div.oba a img:hover{
+        transform:scale(1.3);
+    }
+
+
+
+
+
+html footer{
+    background-color:white;
+    padding: 3em;
+    margin: 2em;
+}
+
+@media(min-width:50em){
+
+section:nth-of-type(1){
+    margin: 4em;
+}
+section:nth-of-type(1) p:nth-of-type(2){
+    text-align:right;
+    margin-right:3em;
+}
+h1{
+   font-size: 1.8em;
+    font-weight:100;
+    margin: 0 2.9em 0.5em;
+    text-align:right;
+
+}
+.kernwoorden{
+    font-size: 3em;
+    margin:-4.8em -0.3em 0.5em auto;
+    max-width: 8em;
+}
+img:nth-of-type(1){
+    max-width: 29em;
+    margin: 0 2em -4em 0;
+}
+section:nth-of-type(1){
+}
+}
+
+@media(min-width:42em){
+
+    html body #projecten div.beentjes{
+        margin-left: -25em;
+    }
+    html body #projecten div.beentjes a img{
+        width: 15em;
+    }
+    html body #projecten div.beentjes a img:hover{
+        transform:scale(1.3);
+    }
+
+    html body #projecten div.studyspots{
+        margin-top: -6em;
+        margin-left: 25em;
+    }
+
+     html body #projecten div.studyspots a img{
+        width: 15em;
+    }
+    html body #projecten div.studyspots a img:hover{
+        transform:scale(1.3);
+    }
+
+    html body #projecten div.postcards{
+        margin-left: -25em;
+        margin-top: -6em;
+    }
+     html body #projecten div.postcards a img{
+        width: 15em;
+    }
+    html body #projecten div.postcards a img:hover{
+        transform:scale(1.3);
+    }
+
+    html body #projecten div.oba{
+        margin-left: 25em;
+        margin-top:-6em;
+    }
+     html body #projecten div.oba a img{
+        width: 15em;
+
+    }
+    html body #projecten div.oba a img:hover{
+        transform:scale(1.3);
+    }
+
+}
+
+@media(min-width: 60em){
+
+section.intro img{
+    max-width: 45em;
+    margin: 0 2em -4em 0;
+}
+
+}
+
+/* BREAKPOINT 5 */
+@media(min-width:70em){
+
+section:nth-of-type(1){
+    margin: 4em;
+}
+
+section.intro p:nth-of-type(2){
+    text-align:right;
+    margin-right:9.4em;
+}
+
+.intro h1{
+   font-size: 2.2em;
+    font-weight:100;
+    margin: 0 3em 0.5em;
+    text-align:right;
+
+}
+.kernwoorden{
+    font-size: 4em;
+    margin:-5em 0 0.5em auto;
+    max-width: 8em;
+}
+section.intro img{
+    max-width: 45em;
+    margin: 0 2em -4em 0;
+}
+section:nth-of-type(1){
+    margin-left: 10em;
+}
+
+@media(min-width: 80em){
+    section.intro div.kern{
+        margin-right: 8em;
+    }
+}
