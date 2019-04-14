@@ -120,7 +120,7 @@ function createMovie(movie) {
   section.appendChild(myArticle);
   myArticle.appendChild(myExtraInfo);
   myArticle.appendChild(button);
-  myArticle.appendChild(myGif);
+
 
 
   //meer of minder informatie laten zien
@@ -135,7 +135,22 @@ function createMovie(movie) {
       }
     });
 
-
-  //scroll and show
-
 }
+//Zoeken op naam van film
+
+var input = document.querySelector('#search');
+var items = document.querySelector('.search-list').getElementsByTagName('article');
+
+input.addEventListener('keyup', function(event) {
+  var text = event.target.value;
+  var pat = new RegExp(text, 'i');
+  for (var i=0; i < items.length; i++) {
+    var item = items[i];
+    if (pat.test(item.innerText)) {
+      item.className = item.className.replace(/\s+?hidden/,'');
+    }
+    else {
+      item.className = item.className + ' hidden';
+    }
+  }
+});
